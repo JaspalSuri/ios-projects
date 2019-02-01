@@ -20,11 +20,20 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="YY1-7B-EwT"/>
+                    <navigationItem key="navigationItem" id="YY1-7B-EwT">
+                        <barButtonItem key="rightBarButtonItem" title="Toggle" id="fyv-jb-vx4">
+                            <connections>
+                                <action selector="toggle:" destination="BYZ-38-t0r" id="WEX-BO-0dc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="toggle" destination="fyv-jb-vx4" id="ILT-IH-dkh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1071.2" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1065" y="146"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uk8-kN-Q3b">

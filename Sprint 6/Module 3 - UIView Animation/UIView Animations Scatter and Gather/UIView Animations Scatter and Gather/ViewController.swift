@@ -15,6 +15,18 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    var shouldScramble: Bool = false
+    
+    @IBOutlet weak var toggle: UIBarButtonItem!
+        
+    @IBAction func toggle(_ sender: Any) {
+        // Change the name of toggle
+        if shouldScramble == false {
+            toggle.title = "Scramble"
+        } else {
+            toggle.title = "Unscramble"
+        }
+        // Animate the letters
+    }
 }
 
