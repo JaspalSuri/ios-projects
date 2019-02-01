@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="d1M-VD-Aqm">
+                                <rect key="frame" x="42" y="134" width="291" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivi-wX-haP">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U2-RH-pTj">
+                                        <rect key="frame" x="50" y="0.0" width="41.5" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-GD-Fwj">
+                                        <rect key="frame" x="99.5" y="0.0" width="42" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjH-xU-SLt">
+                                        <rect key="frame" x="149.5" y="0.0" width="42" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exy-aD-P03">
+                                        <rect key="frame" x="199.5" y="0.0" width="41.5" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQK-zQ-wuj">
+                                        <rect key="frame" x="249" y="0.0" width="42" height="36"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lambda_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="GFB-s7-gkC">
+                                <rect key="frame" x="67" y="270" width="241" height="127"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GFB-s7-gkC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="16t-fG-61m"/>
+                            <constraint firstItem="GFB-s7-gkC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Beu-5d-hcZ"/>
+                            <constraint firstItem="d1M-VD-Aqm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DrU-7J-Rgm"/>
+                            <constraint firstItem="GFB-s7-gkC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GnE-ob-plS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GFB-s7-gkC" secondAttribute="bottom" constant="270" id="QRQ-qU-kkg"/>
+                            <constraint firstItem="d1M-VD-Aqm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="ZHZ-aP-f4p"/>
+                            <constraint firstItem="d1M-VD-Aqm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="cr0-wD-Ur6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="YY1-7B-EwT">
@@ -28,6 +84,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="apple" destination="7U2-RH-pTj" id="ipD-M5-rSB"/>
+                        <outlet property="apricot" destination="OQK-zQ-wuj" id="NlG-VZ-KM3"/>
+                        <outlet property="berry" destination="TjH-xU-SLt" id="zTT-xz-xUz"/>
+                        <outlet property="durian" destination="Exy-aD-P03" id="InR-dc-1n2"/>
+                        <outlet property="lambdaLogo" destination="GFB-s7-gkC" id="w6O-OT-IJM"/>
+                        <outlet property="lime" destination="ivi-wX-haP" id="N0s-q2-9gh"/>
+                        <outlet property="melon" destination="fxi-GD-Fwj" id="GTJ-oK-0hp"/>
                         <outlet property="toggle" destination="fyv-jb-vx4" id="ILT-IH-dkh"/>
                     </connections>
                 </viewController>
@@ -54,4 +117,7 @@
             <point key="canvasLocation" x="316" y="147"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Lambda_Logo" width="574" height="249"/>
+    </resources>
 </document>

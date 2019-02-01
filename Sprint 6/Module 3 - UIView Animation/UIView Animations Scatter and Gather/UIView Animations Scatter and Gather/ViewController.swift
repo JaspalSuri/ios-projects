@@ -9,7 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // MARK: Connections
+    
+    // Transform, translate, rotate.
+    @IBOutlet weak var lime: UILabel!
+    @IBOutlet weak var apple: UILabel!
+    @IBOutlet weak var melon: UILabel!
+    @IBOutlet weak var berry: UILabel!
+    @IBOutlet weak var durian: UILabel!
+    @IBOutlet weak var apricot: UILabel!
+    
+    // Fade
+    @IBOutlet weak var lambdaLogo: UIImageView!
+    
+    // Change text
+    @IBOutlet weak var toggle: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,7 +33,7 @@ class ViewController: UIViewController {
 
     var shouldScramble: Bool = false
     
-    @IBOutlet weak var toggle: UIBarButtonItem!
+    
         
     @IBAction func toggle(_ sender: Any) {
         // Change the name of toggle
