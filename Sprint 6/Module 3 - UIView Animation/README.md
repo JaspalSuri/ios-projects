@@ -4,16 +4,13 @@ Your project scatters the letters of the word "Lambda" by animating them to new 
 
 After completing the lesson material and this project, you'll be able to animate a number of `UIView` and `CALayer` properties.
 
-Preview your project: https://youtu.be/w8zJVBPrmnY
+Preview your project [here](https://youtu.be/w8zJVBPrmnY)).
 
 ## Set up the project
 
 Follow these steps to set up your project skeleton:
 
-1. Create a new single-view project. 
-1. Drag a navigation controller into the `Main.storyboard`. 
-1. Delete the default table view controller.
-1. Make your view controller the root view for the navigation controller.
+1. In `Main.storyboard`, embed the view controller into a navigation controller. 
 1. Make your navigation controller the entry point for the project by setting it as the initial view controller.
 
 ## Create a bar button that calls back to your main view controller
